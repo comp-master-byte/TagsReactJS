@@ -106,7 +106,7 @@ function App() {
           }
       }  
 
-      if(counter === 0) {
+      if(counter === 1) {
         tagRef.current.value = ''
         setDisabled(prev => !prev)
       }
