@@ -1,0 +1,16 @@
+.myInput {
+    outline: none;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-size: 18px;
+    border: none;
+    opacity: 0.4;
+    width: 340px;
+    transition: 0.2s;
+    box-shadow: 0 0 2px #000;
+    
+    &:focus {
+        opacity: 1;
+        box-shadow: 0 0 10px #000;
+    }
+}

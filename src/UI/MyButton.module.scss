@@ -1,0 +1,86 @@
+.myBtn {
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    font-size: 24px;
+    letter-spacing: 4px;
+    color: #39FF14;
+    border: none;
+    padding: 15px 30px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+    
+    &:hover {
+        transition-delay: 2s;
+        background: #39FF14;
+        box-shadow: 0 0 10px #39FF14, 0 0 40px #39FF14, 0 0 80px #39FF14;
+        color: #000;
+    }
+}
+
+.myBtnLine {
+    display: block;
+    position: absolute;
+}
+
+.myBtnLineTop {
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: -100%;
+    background: linear-gradient(90deg, transparent, #39ff14);
+
+}
+
+.myBtn:hover .myBtnLineTop {
+    transition: 1s;
+    transition-delay: 0.25s;
+    left: 100%;
+}
+
+.myBtnLineBottom {
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    right: -100%;
+    background: linear-gradient(270deg, transparent, #39ff14);
+
+}
+
+.myBtn:hover .myBtnLineBottom {
+    transition: 1s;
+    transition-delay: 0.75s;
+    right: 100%;
+}
+
+.myBtnLineRight {
+    width: 2px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+    background: linear-gradient(180deg, transparent, #39ff14);
+
+}
+
+.myBtn:hover .myBtnLineRight {
+    transition: 1s;
+    transition-delay: 0.5s;
+    top: 100%;
+}
+
+.myBtnLineLeft {
+    width: 2px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+    background: linear-gradient(0deg, transparent, #39ff14);
+
+}
+
+.myBtn:hover .myBtnLineLeft {
+    transition: 1s;
+    transition-delay: 1s;
+    bottom: 100%;
+}
